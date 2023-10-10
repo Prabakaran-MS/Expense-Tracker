@@ -1,0 +1,157 @@
+/* Reset default styles */
+
+body,
+h1,
+p,
+ul,
+li,
+button {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+header {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+.expense-form {
+    flex: 1;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.expense-form form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.expense-form input[type="date"],
+.expense-form input[type="text"],
+.expense-form input[type="number"],
+.expense-form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.expense-form button {
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+}
+
+.expense-list {
+    flex: 1;
+    margin-left: 20px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.expense-list h2 {
+    margin: 0;
+}
+
+.expense-list-scroll {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.expense-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.expense-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+li>button {
+    background-color: #ff5733;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+li>button:hover {
+    background-color: #e64c24;
+}
+
+.expense-chart {
+    flex: 1;
+    margin-left: 20px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.totals {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+}
+
+.total {
+    text-align: center;
+}
+
+.total h3 {
+    margin: 0;
+}
+
+.total p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007BFF;
+    margin-top: 5px;
+}
+
+h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #333;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Expense Tracker</h1>
+        <label for="timeFrameSelect">Select Time Frame:</label>
+        <select id="timeFrameSelect" onchange="displayExpenseChart()">
+            <option value="week">Week</option>
+            <option value="month">Month</option>
+            <option value="year">Year</option>
+        </select>
+    </header>
+    <section class="container">
+        <div class="expense-form">
+            <h2>Expense Form</h2>
+            <form>
+                <input type="date" id="expenseDate" required>
+                <input type="text" id="expenseCategory" placeholder="Category" required>
+                <input type="text" id="expenseDescription" placeholder="Description">
+                <input type="number" id="expenseAmount" placeholder="Amount" min="0" required>
+                <button onclick="addExpense()">Add Expense</button>
+            </form>
+        </div>
+
+        <div class="expense-list">
+            <h2>Expense List</h2>
+            <div class="expense-list-scroll">
+                <ul id="expenseList"></ul>
+            </div>
+        </div>
+
+        <div class="expense-chart">
+            <h2>Expense Chart</h2>
+            <canvas id="expenseChartCanvas"></canvas>
+        </div>
+    </section>
+    <section class="totals">
+        <div class="total">
+            <h3>Week Total</h3>
+            <p id="weekTotal">&#x20B9;0.00</p>
+        </div>
+
+        <div class="total">
+            <h3>Month Total</h3>
+            <p id="monthTotal">&#x20B9;0.00</p>
+        </div>
+
+        <div class="total">
+            <h3>Year Total</h3>
+            <p id="yearTotal">&#x20B9;0.00</p>
+        </div>
+
+        <div class="total">
+            <h3>Overall Total</h3>
+            <p id="overallTotal">&#x20B9;0.00</p>
+        </div>
+    </section>
+
+    <script src="./script.js "></script>
+</body>
+
+</html>
